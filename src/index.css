@@ -11,3 +11,63 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #cb086a;
+}
+
+/* About */
+
+section:nth-child(2n) {
+  background-color: #ecf2ff;
+}
+
+.container a {
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+}
+.container a:hover {
+  color: var(--accent-color);
+}
+.section.about{
+  text-align: center;
+  height: 700px;
+}
+
+/* Home */
+
+/* section.hero {
+  padding-top: 72px;
+  text-align: center;
+  height: 700px;
+}
+*/
+.nav{
+  text-align: center;
+}
