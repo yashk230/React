@@ -1,18 +1,20 @@
-import React,{useState} from "react";
+import React, { useState } from 'react';
 
-function ToggleButton()
-{
-    const[data,setData]= useState(false);
-    return(
+function ToggleButton() {
+    const [isOn, setIsOn] = useState(false);
+
+    const handleClick = () => {
+        setIsOn(!isOn);
+    };
+
+    return (
         <>
-            {data ? <p>Hello</p> : null}
-            <p>{data}</p>
-
-            <button onClick={()=>setData(true)}>Show</button>
-            <button onClick={()=>setData(false)}>Hide</button>
-            <button onClick={()=>setData(!data)}>Toggle Button</button>
+            <h1>Toogle button</h1>
+            <button onClick={handleClick}>
+            {isOn ? 'ON' : 'OFF'}
+            </button>
         </>
-    )
+    );
 }
 
 export default ToggleButton;

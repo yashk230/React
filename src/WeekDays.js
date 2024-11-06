@@ -5,11 +5,19 @@ function WeekDays()
     const WeekDays=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 
     return(
-        <ol>
-            {WeekDays.map((days)=>(
-                <li>{days}</li>
-            ))}
-        </ol>
+        <div>
+                <h5>WeekDays</h5>
+                <ul className="container">  {WeekDays.map((days)=>(
+                    <li> &nbsp; {days}</li>
+                ))}
+                </ul>
+            <select>
+                <option>Select</option>
+                {WeekDays.map((days)=>(
+                    <option>{days}</option>
+                ))}
+            </select>
+        </div>
     );
 }
 

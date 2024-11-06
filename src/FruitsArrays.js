@@ -7,11 +7,12 @@ function FruitsArrays()
     const Fruits=fruits1.concat(fruits2);
 
     return(
-        <ol>
+        <div>
+            <h5>Fruits array</h5>
             {Fruits.map((fruits)=>(
-                <li>{fruits}</li>
+                <p>{fruits}</p>
             ))}
-        </ol>
+        </div>
     );
 }
 

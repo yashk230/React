@@ -13,12 +13,13 @@ code {
 }
 
 /* navbar */
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  /* background-color: #333; */
 }
 
 li {
@@ -34,7 +35,7 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color:grey;
 }
 
 .active {
@@ -47,17 +48,17 @@ section:nth-child(2n) {
   background-color: #ecf2ff;
 }
 
-.container a {
+/* .container a {
   color: #000000;
   text-decoration: none;
   text-align: center;
-}
+} */
 .container a:hover {
   color: var(--accent-color);
 }
 .section.about{
   text-align: center;
-  height: 700px;
+  height: 200px;
 }
 
 /* Home */

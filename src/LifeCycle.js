@@ -19,6 +19,7 @@ const LifeCycle = () => {
 
   return (
     <div>
+              <h5>LifeCycle</h5>
       <p>Count: {count}</p>
       <button onClick={() => setCount(count + 1)}>Increment</button>
     </div>

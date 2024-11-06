@@ -1,7 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const About = () => {
+function About() {
 
+  const navigate =useNavigate();
+
+  const home=()=>{
+    navigate('/home')
+  }
     return (
         <section className="about" id="about">
           <div className="container">
@@ -12,6 +18,8 @@ const About = () => {
             <p>Proin molestie
               sapien vel nulla accumsan, sit amet viverra metus ornare. Mauris iaculis ex vitae mollis pulvinar.
               Phasellus fringilla neque sed ligula lacinia iaculis.</p>
+
+              <button onClick={home}>Home</button>
           </div>
         </section>
     );
