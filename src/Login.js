@@ -35,16 +35,16 @@ function Login()
 
     return(
         <div className="container">
-         <form onSubmit={submit}>
-         <h5>Login</h5>
+        <form onSubmit={submit}>
+        <h5>Login</h5>
             <label>Username :
             <input type="text" value={username} onChange={(e)=>setUsername(e.target.value)}/>
             </label>
             <br/>
             <label>Password :
             <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
-         </label>
-             <br/>
+            </label>
+            <br/>
             <button type="submit">Submit</button>
         </form>
         </div>

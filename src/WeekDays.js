@@ -11,7 +11,7 @@ function WeekDays()
                     <li> &nbsp; {days}</li>
                 ))}
                 </ul>
-            <select>
+            <select className="form-select" aria-label="Select a weekday">
                 <option>Select</option>
                 {WeekDays.map((days)=>(
                     <option>{days}</option>
