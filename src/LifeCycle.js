@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-
 const LifeCycle = () => {
   const [count, setCount] = useState(0);
 
